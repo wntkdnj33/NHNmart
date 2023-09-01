@@ -1,2 +1,11 @@
 2023-09-01 21:42:14,197 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:37] - NHN 마트에 옴.
 2023-09-01 21:42:14,199 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:42] - 상품 입력.
+2023-09-01 23:25:03,527 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:37] - NHN 마트에 옴.
+2023-09-01 23:25:03,530 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:42] - 상품 입력.
+2023-09-01 23:25:08,122 [main] WARN c.n.m.FoodStand [FoodStand.java:25] - 재고가 없음!
+2023-09-01 23:46:25,661 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:37] - NHN 마트에 옴.
+2023-09-01 23:46:25,665 [main] INFO c.n.m.NhnMartShell [NhnMartShell.java:42] - 상품 입력.
+2023-09-01 23:46:30,966 [main] WARN c.n.m.NhnMartShell [NhnMartShell.java:50] - 상품 오류 발생.. 상품을 1개 이상 담아야 함
+2023-09-02 00:31:59,789 [main] WARN c.n.m.FoodStand [FoodStand.java:25] - 재고가 없음!
+2023-09-02 00:32:30,115 [main] WARN c.n.m.FoodStand [FoodStand.java:25] - 재고가 없음!
+2023-09-02 00:32:37,056 [main] WARN c.n.m.FoodStand [FoodStand.java:25] - 재고가 없음!

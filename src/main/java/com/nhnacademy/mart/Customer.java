@@ -27,9 +27,9 @@ public class Customer {
     }
 
     // TODO pickFoods 메서드 구현
-    public void pickFoods(FoodStand foodStand){
+    public void pickFoods(FoodStand foodStand) {
         ArrayList<BuyList.Item> Items = buyList.getItems();
-        for(BuyList.Item item : Items){
+        for (BuyList.Item item : Items) {
             for (int i = 0; i < item.getAmount(); i++) {
                 basket.add(foodStand.remove(item.getName()));
             }
@@ -38,15 +38,19 @@ public class Customer {
 
 
     // TODO payTox 메서드 구현
-    public void payTox(Counter counter){
+    public void payTox(Counter counter) {
         int totalprice = counter.pay(basket);
 
-        if(money > 20000) {
+        if (money > 20000) {
             log.warn("소지금이 20000원 이상!");
             throw new IllegalArgumentException("소지금이 20000원을 넘을수 없습니다.");
         }
+        if (totalprice > money){
+            log.warn("총 합 가격이 소지금 보다 많음!");
+            throw new IllegalArgumentException("총 합 가격이 소지금보다 많습니다!");
+        }
         System.out.println("총 가격은 " + totalprice + " 입니다.");
-        System.out.println("고객님 결제 후 잔액 : "  + (money-totalprice));
+        System.out.println("고객님 결제 후 잔액 : " + (money - totalprice));
 
     }
 
